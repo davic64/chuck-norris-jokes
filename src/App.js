@@ -1,5 +1,12 @@
 import React from 'react';
 
-const App = () => <h1>Initial Setup</h1>;
+// Chakra UI
+import { ChakraProvider } from '@chakra-ui/react';
+
+const App = () => (
+    <ChakraProvider>
+        <p>Chakra UI</p>
+    </ChakraProvider>
+);
 
 export default App;
