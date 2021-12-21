@@ -1,8 +1,13 @@
-/* eslint-disable object-curly-newline */
 import React, { useContext, useEffect, useState } from 'react';
 
 // Chakra UI
-import { Button, Center, FormControl, Select } from '@chakra-ui/react';
+import {
+    Button,
+    Center,
+    FormControl,
+    Select,
+    useBreakpointValue,
+} from '@chakra-ui/react';
 
 // Context
 import ChuckContext from '../context/chuknorris/chuckContext';
@@ -10,6 +15,8 @@ import ChuckContext from '../context/chuknorris/chuckContext';
 const FormCategories = () => {
     const chuckContext = useContext(ChuckContext);
     const { categories, getCategories, getJoke } = chuckContext;
+
+    const formSize = useBreakpointValue({ base: '20rem', md: '40rem' });
 
     const [category, setCategory] = useState('');
 
@@ -27,7 +34,7 @@ const FormCategories = () => {
     };
 
     return (
-        <form onSubmit={handle} style={{ width: '40rem' }}>
+        <form onSubmit={handle} style={{ width: formSize }}>
             <FormControl mt={8} w="100%">
                 <Select placeholder="random" onChange={categorySelected}>
                     {categories &&
