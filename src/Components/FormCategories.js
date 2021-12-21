@@ -27,7 +27,7 @@ const FormCategories = () => {
     };
 
     return (
-        <form onSubmit={handle} style={{ width: '100%' }}>
+        <form onSubmit={handle} style={{ width: '40rem' }}>
             <FormControl mt={8} w="100%">
                 <Select placeholder="random" onChange={categorySelected}>
                     {categories &&

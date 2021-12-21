@@ -5,6 +5,7 @@ import { Center, Flex, Heading } from '@chakra-ui/react';
 
 // Components
 import FormCategories from '../Components/FormCategories';
+import JokeCard from '../Components/JokeCard';
 
 const Home = () => (
     <Center h="100vh">
@@ -13,6 +14,7 @@ const Home = () => (
                 CHUCK NORRIS JOKES
             </Heading>
             <FormCategories />
+            <JokeCard />
         </Flex>
     </Center>
 );
