@@ -1,5 +1,6 @@
 {
     "name": "chuck-norris-jokes",
+    "homepage": "https://davic64.github.io/chuck-norris-jokes/",
     "version": "1.0.0",
     "description": "This is an app created with react that connects to the Chuck Norris Jokes API",
     "main": "index.js",
